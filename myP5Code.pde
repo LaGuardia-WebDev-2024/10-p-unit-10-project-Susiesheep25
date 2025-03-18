@@ -10,10 +10,23 @@ setup = function() {
     
    var x=0;
     while(x<400){
-    text('☁️', x, 200);
-     x+=60;
+    textSize(random(60,120))
+    text('☁️', x, x+120);
+     x+=50;
    
     
+    }
+    
+    var x=50
+    while (x<400){
+    textSize(random(60,120))
+    text('☁️', x, x+260);
+    x+=50
+    }
+    
+    for (var x=-5; x<300; x+=80){
+    textSize(random(60,120))
+    text("☁️", x, 600);
     }
 };
 
