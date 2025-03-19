@@ -24,10 +24,20 @@ setup = function() {
     x+=50
     }
     
-    for (var x=-5; x<300; x+=80){
-    textSize(random(60,120))
+    for (var x=-5; x<300; x+=100){
+    textSize(random(60,100))
     text("☁️", x, 600);
     }
 };
+
+//Draw Function- Runs on Repeat
+  draw = function(){
+  
+  if(mousePressed){
+    textSize(50);
+    text("🐦", random(0,400), random (0,480));
+    }
+  
+  };
 
 
